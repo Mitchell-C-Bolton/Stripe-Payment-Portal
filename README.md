@@ -30,7 +30,7 @@ stripe/
 │   ├── style.css          
 │   └── resources/
 │       ├── favicon.png
-│       └── logi.png
+│       └── logo.png
 │
 ├── api/                           # Contains endpoints to create, process, or cancel payments
 │   ├── cancel-payment.js
