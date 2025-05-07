@@ -1,0 +1,17 @@
+{
+  "name": "stripeproject",
+  "version": "1.0.0",
+  "description": "Stripe server and page for payment portal",
+  "main": "script.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Mitchell Bolton",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "stripe": "^17.7.0",
+    "stripe-cli": "^0.1.0"
+  }
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Payment Portal</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="icon" type="image/png" href="./resources/favicon.png">
+    </head>
+
+    <body class="page-container">
+        <header class="py-4">
+            <div class="container position-relative">
+              <h1 class="fw-bold display-4 text-center m-0">
+                Stripe Payment Portal
+              </h1>
+            </div>
+          </header>
+        <main class="content">
+            <div class="container">
+                <!-- Card wrapper -->
+                <div id="card" class="card shadow p-4 mt-4 mb-5" style="max-width: 600px; margin: 0 auto;">
+                    <form id="paymentForm" onsubmit="handleSubmit(event)">
+                        <div class="mb-3">
+                            <!-- Input field for payment amount -->
+                            <input 
+                                type="text" 
+                                class="form-control p-3" 
+                                id="PaymentAmount" 
+                                placeholder="Enter Total" 
+                                required 
+                                oninput="formatCurrency(event)" 
+                            >
+                        </div>
+
+                        <div class="mb-3">
+                            <!-- Shows user total they're inputting --> 
+                            <div 
+                                id="formattedAmount" 
+                                class="form-control-plaintext">Total:
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary w-25 p-2 m-2">Reader Payment</button>
+                            <button type="button" onclick="manualSubmit()" class="btn btn-warning w-25 p-2 m-2">Manual Payment</button>
+                            <button type="button" onclick="cancelPayment()" class="btn btn-danger w-25 p-2 m-2">Cancel Payment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <div class="p-3 d-flex px-5 pb-4" style="z-index: 1000; margin-top: 45px;">
+                <button id="darkModeToggle" class="btn btn-light">Dark Mode</button>
+            </div>
+
+            <div class="bottom-0 end-0 p-3 d-flex px-4 pb-4" style="z-index: 1000;">
+                <img id="logo" src="./resources/logo.png" alt="LOGO" style="width: 120px; height: auto;">
+            </div>
+        </div>
+
+
+        <footer class="bg-dark text-light text-center py-3">
+            <p>&copy; 2025 Brendan Lopez D.D.S. All rights reserved.</p>
+        </footer>
+
+        <!-- Bootstrap Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- JavaScript Import -->
+        <script src="/script.js"></script>
+    </body>
+</html>
