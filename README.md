@@ -11,10 +11,12 @@ This system is designed for use in a small office setting, allowing staff to man
 - **Frontend:**  
   - HTML5 + Bootstrap for UI  
   - JavaScript for handling currency input and API requests
+  - Vercel for hosting
 
 - **Backend:**  
   - Node.js (Express)  
   - Stripe Node SDK
+  - Vercel for hosting
 
 - **Hardware:**  
   - BBPOS WisePOS E
