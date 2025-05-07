@@ -79,27 +79,27 @@ stripe/
    STRIPE_TERMINAL_LOCATION=your_terminal_location_id
    ```
 
-3. **Install Vercel CLI*
+3. **Install Vercel CLI**
    ```
    npm install -g vercel
    ```
 
-4. **Log in to Vercel*
+4. **Log in to Vercel**
    ```
    vercel login
    ```
    
-5. **Run the development server
+5. **Run the development server**
    ```
    vercel dev
    ```
 
-6. Navigate via browser to your local port
+6. **Navigate via browser to your local port**
    ```
    http://localhost:3000
    ```
 
-   NOTE:
+   **NOTE:**
    ```
    The application will not function properly without a terminal ID to sent payment intents to.
    Front end can still be viewed. 
