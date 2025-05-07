@@ -76,7 +76,7 @@ stripe/
    ```
 
 2. **Set up environment variables**  
-   Create a `.env` file:
+   Create a `.env.local` file:
    ```bash
    STRIPE_SECRET_KEY=your_stripe_secret_key
    STRIPE_TERMINAL_LOCATION=your_terminal_location_id
