@@ -70,9 +70,6 @@ stripe/
 1. **Install dependencies**  
    ```
    npm install
-   "dotenv": "^16.4.7",
-   "express": "^5.1.0",
-   "stripe": "^17.7.0",
    ```
 
 2. **Set up environment variables**  
@@ -82,14 +79,33 @@ stripe/
    STRIPE_TERMINAL_LOCATION=your_terminal_location_id
    ```
 
-3. **Run the server**
+3. **Install Vercel CLI*
    ```
-   node server.js
+   npm install -g vercel
    ```
 
-4. **Visit the portal**  
-   Open your browser to `http://localhost:3000`
+4. **Log in to Vercel*
+   ```
+   vercel login
+   ```
+   
+5. **Run the development server
+   ```
+   vercel dev
+   ```
 
+6. Navigate via browser to your local port
+   ```
+   http://localhost:3000
+   ```
+
+   NOTE:
+   ```
+   The application will not function properly without a terminal ID to sent payment intents to.
+   Front end can still be viewed. 
+   ```
+
+   
 ## 🧪 Testing
 
 - Terminal reader functionality should be tested using Stripe’s official test cards and verified with physical hardware.
